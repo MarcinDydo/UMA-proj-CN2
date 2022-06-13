@@ -1,10 +1,10 @@
 {
     "Path": "Rice_Cammeo_Osmancik_calk.csv",
     "Significance": 5,
-    "NumberOfTrees": 5,
+    "NumberOfTrees": 25,
     "NumberOfAttributes": 3,
-    "MaxNumOfIntervals": 10,
-    "TrainerSize": 100,
+    "MaxNumOfIntervals": 7,
+    "TrainerSize": 1000,
 
     "DataFormat": {
     "Area": "int64",

@@ -90,6 +90,13 @@ def print_ruleset(ruleset,inputdata,classColName):
 			print(f"{inputdata.columns[i]} : {selector} ", end='')
 		print(f" -> {classColName}:{rule[1]}") 
 
+def write_rules(ruleset,path,i,localdf):
+	f = open(path,"a")
+	f.write(f"tree{i}:"+ localdf.columns+'\n')
+	while not ruleset.empty():
+		f.write(str(ruleset.get())+'\n')
+	f.close()
+
 def rules_cn2(inputdata,significance,n):
 	ruleSet = Queue()
 	trainingSet = pd.DataFrame(inputdata)

@@ -1,5 +1,5 @@
 {
-    "Path": "Rice_Cammeo_Osmancik_calk.csv",
+    "Path": "basic.csv",
     "Significance": 5,
     "NumberOfTrees": 25,
     "NumberOfAttributes": 3,
@@ -7,12 +7,9 @@
     "TrainerSize": 1000,
 
     "DataFormat": {
-    "Area": "int64",
-    "Perimeter": "int64",
-    "Major_Axis_Length": "int64",
-    "Minor_Axis_Length": "int64",
-    "Eccentricity": "int64",
-    "Convex_Area": "int64",
-    "Extent": "int64",
+    "a1": "int64",
+    "a2": "int64",
+    "a3": "int64",
+    "a4": "int64",
     "Class": "string"}
 }

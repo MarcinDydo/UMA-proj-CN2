@@ -7,8 +7,8 @@ import ast
 Pobiera las regul z pliku oraz dane do predykcji, a następnie przewiduje i dostarcza informacji o błędach
 '''
 
-rules_path = "generated_trees/rules.txt" #input("Config file path ->")
-predict_data = "datasets/Rice_Cammeo_Osmancik_calk.csv"
+rules_path = "generated_trees/rules-wine.txt" #input("Config file path ->")
+predict_data = "datasets/predict-wine.csv"
 
 InputData = pd.read_csv(predict_data,sep = ';')
 GlobalAttributes = list(InputData.columns)[0:-1]
@@ -86,7 +86,7 @@ trueCount=0
 falseCount=0
 i=0
 for row in InputData.itertuples(index=False):
-    if(row.Class==rowPred[i]):
+    if(row[-1]==rowPred[i]):
         trueCount+=1
     else:
         falseCount+=1

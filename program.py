@@ -7,7 +7,7 @@ import json
 Program na ume, wykorzystuje cn2 do generowania zbiorów reguł
 '''
 config_path = "config.txt" #input("Config file path ->")
-output_path = "rules.txt" #input("Output file path ->")
+output_path = "rules-test.txt" #input("Output file path ->")
 
 with open(config_path) as f:
     data = f.read()
@@ -35,5 +35,5 @@ for i in range(0,config["NumberOfTrees"]):
     localDataFrame = pd.DataFrame(InputData[localAttributes]).sample(config["TrainerSize"],replace=True)
     print(f"Working on tree {i}...")
     rules=cn_two.rules_cn2(localDataFrame,config["Significance"],config["NumberOfAttributes"])
-    cn_two.write_rules(rules,"rules.txt",i,localDataFrame)
+    cn_two.write_rules(rules,output_path,i,localDataFrame)
     #cn_two.print_ruleset(rules,localDataFrame,ClassName)

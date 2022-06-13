@@ -92,7 +92,7 @@ def print_ruleset(ruleset,inputdata,classColName):
 
 def write_rules(ruleset,path,i,localdf):
 	f = open(path,"a")
-	f.write(f"tree{i}:"+ localdf.columns+'\n')
+	f.write(f"tree{i}:"+ str(list(localdf)[:-1])+'\n')
 	while not ruleset.empty():
 		f.write(str(ruleset.get())+'\n')
 	f.close()

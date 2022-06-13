@@ -1,15 +1,22 @@
 {
-    "Path": "basic.csv",
-    "Significance": 5,
-    "NumberOfTrees": 25,
-    "NumberOfAttributes": 3,
-    "MaxNumOfIntervals": 7,
-    "TrainerSize": 1000,
+    "Path": "datasets/winequality-red.csv",
+    "Significance": 8,
+    "NumberOfTrees": 10,
+    "NumberOfAttributes": 2,
+    "MaxNumOfIntervals": 2,
+    "TrainerSize": 100,
 
     "DataFormat": {
-    "a1": "int64",
-    "a2": "int64",
-    "a3": "int64",
-    "a4": "int64",
-    "Class": "string"}
+    "fixed_acidity": "int64",
+    "volatile _cidity": "int64",
+    "citric_acid": "int64",
+    "residual_sugar": "int64",
+    "chlorides": "int64",
+    "free_sulfur dioxide": "int64",
+    "total_sulfur dioxide": "int64",
+    "density": "int64",
+    "pH": "int64",
+    "sulphates": "int64",
+    "alcohol": "int64",
+    "quality": "string"}
 }

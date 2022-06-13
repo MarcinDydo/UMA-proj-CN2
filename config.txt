@@ -1,10 +1,10 @@
 {
     "Path": "datasets/winequality-red.csv",
     "Significance": 8,
-    "NumberOfTrees": 10,
-    "NumberOfAttributes": 2,
-    "MaxNumOfIntervals": 2,
-    "TrainerSize": 100,
+    "NumberOfTrees": 15,
+    "NumberOfAttributes": 4,
+    "MaxNumOfIntervals": 5,
+    "TrainerSize": 500,
 
     "DataFormat": {
     "fixed_acidity": "int64",

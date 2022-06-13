@@ -8,7 +8,7 @@ Pobiera las regul z pliku oraz dane do predykcji, a następnie przewiduje i dost
 '''
 
 rules_path = "generated_trees/rules-wine.txt" #input("Config file path ->")
-predict_data = "datasets/predict-wine.csv"
+predict_data = "datasets/winequality-red.csv"
 
 InputData = pd.read_csv(predict_data,sep = ';')
 GlobalAttributes = list(InputData.columns)[0:-1]
